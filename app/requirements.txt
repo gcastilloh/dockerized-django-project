@@ -1,0 +1,8 @@
+psycopg2-binary
+django
+djangorestframework
+pandas
+django-ckeditor
+textract
+gunicorn
+
