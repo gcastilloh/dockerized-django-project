@@ -1,6 +1,20 @@
-# Fuentes:
+# Dockerized django project
+Es la base de un proyecto en django, el proyecto se llama geco pero puede fácilmente migrarse a cualquier otro.
+
+El Docker contendrá:
+
+-una app configurada tanto para trabajar en modo desarrollo como en modo debug
+-un servidor gunicorn
+-un servidor nginx
+-un servidor postgres
+
+Esta configuracion se basó en el articulo:
 
 https://testdriven.io/blog/dockerizing-django-with-postgres-gunicorn-and-nginx/
+
+Pero modificado debido a que se deseaba emplear pandas, y otras apps que no son directamente instalables en Alpine, por lo que
+se prefirió usar Ubuntu. El ubuntu que se emplea es una version dockerizada de Ubuntu más algunas herramientas, 
+[papaoso63/ubuntu-dev](https://hub.docker.com/repository/docker/papaoso63/ubuntu-dev) (Puede consultar en el repo lo que se tiene instaldo)
 
 # Detener 
 
@@ -39,7 +53,7 @@ http://localhost:1337/admin
 docker-compose exec web python3 manage.py startapp upload
 docker-compose exec db psql --username=hello_django --dbname=hello_django_dev
 
-# consultyar el estdo de un volumen
+# consultar el estado de un volumen
 
 docker volume inspect django-project_postgres_data
 
