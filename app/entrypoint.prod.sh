@@ -6,6 +6,10 @@
 #    #!/bin/sh
 # si no marcará un error confuso que dice que no encuentra el entrypoint.sh
 # cuando el archivo si existe pero lo que no encuentra es el shell
+#
+# Tambien es necesario tener cuidad con el crlf (windows) y el lf (unix)
+# en mi caso me aseguro que LF este habilitado en el editor en lugar del CRLF
+# en vs abajo derecha debe decir UTF-8 LF
 
 
 if [ "$DATABASE" = "postgres" ]
