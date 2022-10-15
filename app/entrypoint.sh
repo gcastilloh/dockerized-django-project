@@ -1,4 +1,11 @@
-#!/bin/sh
+#!/bin/bash
+
+# si este entrypoint va a ejecutarse en ubuntu debe usarse 
+#    #!/bin/bash
+# en alpine se emplea
+#    #!/bin/sh
+# si no marcará un error confuso que dice que no encuentra el entrypoint.sh
+
 
 if [ "$DATABASE" = "postgres" ]
 then
