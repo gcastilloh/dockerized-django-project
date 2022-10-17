@@ -1,3 +1,11 @@
+# IMPORTANTE
+Es necesario tener cuidad con el `crlf` (windows) y el `lf` (unix), este detalle me genró problemas que no 
+[pareceian tener sentido](https://stackoverflow.com/questions/51888625/docker-r-command-not-found-on-windows),
+en particular con la 
+[ejecución de scrpits del shell](https://stackoverflow.com/questions/51888625/docker-r-command-not-found-on-windows).
+Lo que se resolvió asegurandome que que `LF` este habilitado en el editor en lugar del `CRLF` 
+en vs abajo derecha debe decir `UTF-8 LF`
+
 # Dockerized django project
 Es la base de un proyecto en django, el proyecto se llama geco pero puede fácilmente migrarse a cualquier otro.
 
