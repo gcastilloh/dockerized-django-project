@@ -1,2 +1,3 @@
 .env.prod
 .end.prod.db
+app/mediafiles/*

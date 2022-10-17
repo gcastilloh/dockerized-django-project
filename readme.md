@@ -1,3 +1,7 @@
+# Manual de Git
+
+[Para referencia y consulta de uso de git en linea de comandos](https://desarrolloweb.com/manuales/manual-de-git.html)
+
 # IMPORTANTE
 Es necesario tener cuidad con el `crlf` (windows) y el `lf` (unix), este detalle me genró problemas que no 
 [pareceian tener sentido](https://stackoverflow.com/questions/51888625/docker-r-command-not-found-on-windows),
@@ -5,6 +9,8 @@ en particular con la
 [ejecución de scrpits del shell](https://stackoverflow.com/questions/51888625/docker-r-command-not-found-on-windows).
 Lo que se resolvió asegurandome que que `LF` este habilitado en el editor en lugar del `CRLF` 
 en vs abajo derecha debe decir `UTF-8 LF`
+[aqui](https://stackoverflow.com/questions/39525417/visual-studio-code-how-to-show-line-endings) podras encontrar cómo
+dejar por default lf en tu vs
 
 # Dockerized django project
 Es la base de un proyecto en django, el proyecto se llama geco pero puede fácilmente migrarse a cualquier otro.
@@ -64,4 +70,20 @@ docker-compose exec db psql --username=hello_django --dbname=hello_django_dev
 # consultar el estado de un volumen
 
 docker volume inspect django-project_postgres_data
+
+# creacion de una app (upload) usando docker 
+
+Es necesario tener levantada la version en modo *desarrollo* para que se afecte el directorio de nuestro disco
+
+docker-compose exec web python3 manage.py startapp upload
+
+# nota de git
+
+Si se desea [dejar de seguir un archivo](https://desarrolloweb.com/articulos/eliminar-archivos-git-gitignore.html) `miarchivo.gif` o directorio, por ejemplo el `mediafiles` :
+
+git reset HEAD app/mediafiles/*
+
+git update-index --assume-unchanged app/mediafiles/*
+git update-index --assume-unchanged app/mediafiles/miarchio.gif
+
 
