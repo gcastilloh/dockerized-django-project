@@ -86,4 +86,10 @@ git reset HEAD app/mediafiles/*
 git update-index --assume-unchanged app/mediafiles/*
 git update-index --assume-unchanged app/mediafiles/miarchio.gif
 
+# Cambios en la version 4 de django
+
+A partir de la vertsion 4 de django [hay que introducir la llave `CSRF_TRUSTED_ORIGINS` para que no marque un error por CSRF](https://stackoverflow.com/questions/70501974/django-returning-csrf-verification-failed-request-aborted-behind-nginx-prox)
+
+
+
 
