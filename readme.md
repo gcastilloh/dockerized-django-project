@@ -15,3 +15,7 @@ Existen dos posibles modos:
 * En producción: docker-compose.prod.yml
 
 [Aqui](https://github.com/gcastilloh/dockerized-django-project/blob/master/notas.md) encontrará notas que realicé durante la implantación 
+
+Esta configuración se basó en el artículo:
+
+https://testdriven.io/blog/dockerizing-django-with-postgres-gunicorn-and-nginx/
