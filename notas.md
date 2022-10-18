@@ -23,8 +23,9 @@ El Docker contendrá:
 -un servidor gunicorn
 -un servidor nginx
 -un servidor postgres
+-un servidor pgadmin4
 
-Esta configuracion se basó en el articulo:
+Esta configuración se basó en el artículo:
 
 https://testdriven.io/blog/dockerizing-django-with-postgres-gunicorn-and-nginx/
 
