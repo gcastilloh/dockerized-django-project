@@ -14,4 +14,4 @@ Existen dos posibles modos:
 * En desarrollo: docker-compose.yml
 * En producción: docker-compose.prod.yml
 
-[Aqui]() encontrará notas que realicé durante la implantación 
+[Aqui](https://github.com/gcastilloh/dockerized-django-project/blob/master/readme.md) encontrará notas que realicé durante la implantación 
