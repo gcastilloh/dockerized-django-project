@@ -19,11 +19,11 @@ Es la base de un proyecto en django, el proyecto se llama geco pero puede fácil
 
 El Docker contendrá:
 
--una app configurada tanto para trabajar en modo desarrollo como en modo debug
--un servidor gunicorn
--un servidor nginx
--un servidor postgres
--un servidor pgadmin4
+* una app configurada tanto para trabajar en modo desarrollo como en modo debug
+* un servidor gunicorn
+* un servidor nginx
+* un servidor postgres
+* un servidor pgadmin4
 
 Esta configuración se basó en el artículo:
 
